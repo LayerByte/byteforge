@@ -1,0 +1,298 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+img,
+video,
+canvas,
+svg {
+  max-width: 100%;
+}
+
+button,
+a,
+input,
+select,
+textarea {
+  -webkit-tap-highlight-color: transparent;
+}
+
+button,
+[role="button"],
+a[href],
+select {
+  touch-action: manipulation;
+}
+
+button:focus-visible,
+a:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+  outline: 3px solid rgba(32, 163, 131, .35);
+  outline-offset: 3px;
+}
+
+table {
+  max-width: 100%;
+}
+
+@media (max-width: 1100px) {
+  main,
+  .main,
+  .content,
+  .container,
+  .dashboard,
+  .page,
+  .wrapper {
+    max-width: 100% !important;
+  }
+
+  .grid,
+  .cards,
+  .stats,
+  .features,
+  .features-grid,
+  .pricing-grid,
+  .product-grid,
+  .projects-grid,
+  .server-grid,
+  .dashboard-grid {
+    grid-template-columns: repeat(auto-fit, minmax(min(260px, 100%), 1fr)) !important;
+  }
+}
+
+@media (max-width: 900px) {
+  .navbar,
+  .site-header,
+  header,
+  .topbar,
+  .toolbar,
+  .hero,
+  .hero-content {
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  .nav-links,
+  nav ul,
+  nav {
+    flex-wrap: wrap;
+  }
+
+  table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+
+  form {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 640px) {
+  body {
+    font-size: 15px;
+  }
+
+  input,
+  select,
+  textarea,
+  button {
+    max-width: 100%;
+  }
+
+  .container,
+  .content,
+  main,
+  section {
+    padding-left: clamp(14px, 4vw, 22px);
+    padding-right: clamp(14px, 4vw, 22px);
+  }
+}
+
+/* === Codex UI polish start === */
+:root {
+  --demo-accent: #3b82f6;
+  --demo-accent-2: #60a5fa;
+  --demo-surface: #111111;
+  --demo-surface-2: #1a1a1a;
+  --demo-text: #e5e5e5;
+  --demo-muted: #8a8a8a;
+  --demo-border: rgba(59, 130, 246, .24);
+  --demo-radius: 8px;
+  --demo-shadow: 0 18px 42px rgba(59, 130, 246, .16);
+}
+
+button,
+.btn,
+[role="button"],
+input[type="button"],
+input[type="submit"],
+input[type="reset"] {
+  min-height: 40px;
+  border-radius: var(--demo-radius);
+  font-weight: 750;
+  letter-spacing: 0;
+  transition: transform .16s ease, box-shadow .16s ease, background-color .16s ease, border-color .16s ease, color .16s ease, opacity .16s ease;
+}
+
+button:not(:disabled):hover,
+.btn:not(:disabled):hover,
+[role="button"]:not(:disabled):hover,
+input[type="button"]:not(:disabled):hover,
+input[type="submit"]:not(:disabled):hover {
+  transform: translateY(-1px);
+}
+
+button:disabled,
+.btn:disabled,
+[role="button"][aria-disabled="true"] {
+  cursor: not-allowed;
+  opacity: .68;
+  transform: none !important;
+}
+
+.btn-primary,
+.btn.primary,
+.btn-accent,
+.primary-btn,
+.cta-button,
+.hero .btn:first-child,
+.hero-content .btn:first-child,
+button.primary,
+button[type="submit"] {
+  background: linear-gradient(135deg, var(--demo-accent), var(--demo-accent-2)) !important;
+  border-color: transparent !important;
+  color: #ffffff !important;
+  box-shadow: var(--demo-shadow);
+}
+
+.btn-primary:hover,
+.btn.primary:hover,
+.btn-accent:hover,
+.primary-btn:hover,
+.cta-button:hover,
+.hero .btn:first-child:hover,
+.hero-content .btn:first-child:hover,
+button.primary:hover,
+button[type="submit"]:hover {
+  filter: saturate(1.05) brightness(1.04);
+  box-shadow: 0 20px 46px color-mix(in srgb, var(--demo-accent) 28%, transparent);
+}
+
+.btn-outline,
+.btn-ghost,
+.secondary-btn,
+button.secondary,
+button.ghost {
+  background: rgba(255,255,255,.045) !important;
+  border-color: var(--demo-border) !important;
+  color: var(--demo-text) !important;
+}
+
+.btn-outline:hover,
+.btn-ghost:hover,
+.secondary-btn:hover,
+button.secondary:hover,
+button.ghost:hover {
+  background: rgba(255,255,255,.075) !important;
+  border-color: color-mix(in srgb, var(--demo-accent) 50%, transparent) !important;
+}
+
+input,
+select,
+textarea,
+.search-box {
+  transition: border-color .16s ease, box-shadow .16s ease, background-color .16s ease;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+.search-box:focus-within {
+  border-color: var(--demo-accent) !important;
+  box-shadow: 0 0 0 4px color-mix(in srgb, var(--demo-accent) 18%, transparent) !important;
+}
+
+.card,
+.stat-card,
+.metric-card,
+.pricing-card,
+.server-card,
+.product-card,
+.project-card,
+.feature-card {
+  border-color: color-mix(in srgb, var(--demo-border) 78%, transparent);
+}
+
+.card:hover,
+.pricing-card:hover,
+.server-card:hover,
+.product-card:hover,
+.project-card:hover,
+.feature-card:hover {
+  border-color: color-mix(in srgb, var(--demo-accent) 42%, transparent);
+}
+
+.demo-reset {
+  color: var(--demo-accent) !important;
+  border-color: var(--demo-border) !important;
+  background: color-mix(in srgb, #111111 92%, transparent) !important;
+}
+
+.demo-modal {
+  background: #111111 !important;
+  color: var(--demo-text) !important;
+  border: 1px solid var(--demo-border);
+}
+
+.demo-modal header,
+.demo-modal footer {
+  border-color: color-mix(in srgb, var(--demo-border) 75%, transparent) !important;
+  background: rgba(255,255,255,.045) !important;
+}
+
+.demo-modal .body,
+.demo-modal .close {
+  color: var(--demo-muted) !important;
+}
+
+.demo-modal .primary {
+  background: var(--demo-accent) !important;
+  color: #ffffff !important;
+}
+
+.demo-empty {
+  color: var(--demo-muted) !important;
+  background: rgba(255,255,255,.045) !important;
+  border-color: var(--demo-border) !important;
+}
+
+.demo-toast {
+  background: color-mix(in srgb, var(--demo-surface) 92%, #000 8%) !important;
+  border-color: var(--demo-border) !important;
+  box-shadow: var(--demo-shadow) !important;
+}
+
+@media (max-width: 640px) {
+  button,
+  .btn,
+  [role="button"],
+  input[type="button"],
+  input[type="submit"] {
+    min-height: 44px;
+  }
+}
+/* === Codex UI polish end === */

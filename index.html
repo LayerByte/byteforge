@@ -1,0 +1,892 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BYTEFORGE — Software Development Agency</title>
+    <!-- Font and icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2064%2064%22%3E%3Crect%20width%3D%2264%22%20height%3D%2264%22%20rx%3D%2214%22%20fill%3D%22%230d1117%22%2F%3E%3Cg%20fill%3D%22none%22%20stroke%3D%22%231677ff%22%20stroke-width%3D%224%22%3E%3Ccircle%20cx%3D%2232%22%20cy%3D%2232%22%20r%3D%2220%22%2F%3E%3Cpath%20d%3D%22M12%2032h40M32%2012c7%207%207%2033%200%2040M32%2012c-7%207-7%2033%200%2040%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E">
+<link rel="stylesheet" href="css/style.css?v=4">
+<link rel="stylesheet" href="css/responsive.css">
+</head>
+<body data-demo-project="byteforge">
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="container nav-inner">
+            <a href="#" class="logo" onclick="navigateTo('home'); return false;">
+                <span class="brand-mark" aria-hidden="true"><i class="fas fa-globe"></i></span>
+                <span class="brand-name">BYTEFORGE</span>
+            </a>
+            <div class="nav-links">
+                <a href="#" data-page="home" class="active" onclick="navigateTo('home'); return false;">Home</a>
+                <a href="#" data-page="services" onclick="navigateTo('services'); return false;">Services</a>
+                <a href="#" data-page="projects" onclick="navigateTo('projects'); return false;">Projects</a>
+                <a href="#" data-page="developers" onclick="navigateTo('developers'); return false;">Developers</a>
+                <a href="#" data-page="technologies" onclick="navigateTo('technologies'); return false;">Technologies</a>
+                <a href="#" data-page="pricing" onclick="navigateTo('pricing'); return false;">Pricing</a>
+                <a href="#" data-page="contact" onclick="navigateTo('contact'); return false;">Contact</a>
+                <a href="#" data-page="dashboard" onclick="navigateTo('dashboard'); return false;">Dashboard</a>
+            </div>
+            <div class="demo-badge">DEMO MODE</div>
+        </div>
+    </nav>
+
+    <!-- ==================== HOME ==================== -->
+    <div id="page-home" class="page active">
+        <div class="container">
+            <h1>Software development,<br>without the noise.</h1>
+            <p class="subhead">BYTEFORGE is a full-stack agency building web applications, APIs, automation, and custom software for teams that care about craft.</p>
+            <div class="flex-between" style="justify-content: flex-start; gap: 12px;">
+                <button class="btn" onclick="navigateTo('contact')">Start a project <i class="fas fa-arrow-right"></i></button>
+                <button class="btn btn-outline" onclick="navigateTo('projects')">View our work</button>
+            </div>
+
+            <div class="divider"></div>
+
+            <h2>What we do</h2>
+            <div class="grid grid-3 mt-24">
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-globe"></i></div>
+                    <h3>Web Applications</h3>
+                    <p>React, Vue, Svelte, and vanilla JS. Fast, accessible, production-grade frontends.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-server"></i></div>
+                    <h3>Backend Development</h3>
+                    <p>Node, Python, Go, and Java. Scalable services designed for real workloads.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-plug"></i></div>
+                    <h3>APIs</h3>
+                    <p>REST, GraphQL, and gRPC. Well-documented, versioned, and tested.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-robot"></i></div>
+                    <h3>Automation</h3>
+                    <p>CI/CD, scripting, and workflow automation to remove repetitive work.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-cloud"></i></div>
+                    <h3>DevOps</h3>
+                    <p>Docker, Kubernetes, Terraform, and observability. Ship with confidence.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-mobile-alt"></i></div>
+                    <h3>Mobile Applications</h3>
+                    <p>React Native and Flutter. Cross-platform apps that feel native.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-puzzle-piece"></i></div>
+                    <h3>Custom Software</h3>
+                    <p>Bespoke tools, internal platforms, and integrations built to fit.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-code-branch"></i></div>
+                    <h3>Code Audits</h3>
+                    <p>Architecture reviews, performance tuning, and technical due diligence.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-headset"></i></div>
+                    <h3>Maintenance</h3>
+                    <p>Ongoing support, monitoring, and incremental improvements.</p>
+                </div>
+            </div>
+
+            <div class="divider"></div>
+
+            <h2>Trusted by engineering teams</h2>
+            <div class="grid grid-4 mt-24">
+                <div class="card-flat" style="text-align: center;">
+                    <div style="font-size: 20px; font-weight: 700; color: var(--white);">120+</div>
+                    <div class="text-muted text-sm">Projects shipped</div>
+                </div>
+                <div class="card-flat" style="text-align: center;">
+                    <div style="font-size: 20px; font-weight: 700; color: var(--white);">18</div>
+                    <div class="text-muted text-sm">Engineers</div>
+                </div>
+                <div class="card-flat" style="text-align: center;">
+                    <div style="font-size: 20px; font-weight: 700; color: var(--white);">99.95%</div>
+                    <div class="text-muted text-sm">Uptime SLA</div>
+                </div>
+                <div class="card-flat" style="text-align: center;">
+                    <div style="font-size: 20px; font-weight: 700; color: var(--white);">4.9/5</div>
+                    <div class="text-muted text-sm">Client rating</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==================== SERVICES ==================== -->
+    <div id="page-services" class="page">
+        <div class="container">
+            <h1>Services</h1>
+            <p class="subhead">End-to-end software development. We embed with your team or work independently.</p>
+
+            <div class="grid grid-2 mt-32">
+                <div class="card">
+                    <h3><i class="fas fa-globe text-accent" style="margin-right: 10px;"></i>Web Applications</h3>
+                    <p class="text-muted text-sm mt-16">Single-page applications, progressive web apps, and server-rendered frontends. We focus on performance, accessibility, and maintainable component architecture.</p>
+                    <div class="tech-grid mt-16">
+                        <span class="tech-tag">React</span>
+                        <span class="tech-tag">Vue</span>
+                        <span class="tech-tag">Svelte</span>
+                        <span class="tech-tag">TypeScript</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <h3><i class="fas fa-server text-accent" style="margin-right: 10px;"></i>Backend Development</h3>
+                    <p class="text-muted text-sm mt-16">Scalable APIs, microservices, and monoliths. Database design, caching, queue systems, and background jobs.</p>
+                    <div class="tech-grid mt-16">
+                        <span class="tech-tag">Node.js</span>
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Go</span>
+                        <span class="tech-tag">Java</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <h3><i class="fas fa-plug text-accent" style="margin-right: 10px;"></i>APIs</h3>
+                    <p class="text-muted text-sm mt-16">REST, GraphQL, gRPC, and WebSockets. Versioning, documentation, rate limiting, and authentication.</p>
+                    <div class="tech-grid mt-16">
+                        <span class="tech-tag">OpenAPI</span>
+                        <span class="tech-tag">GraphQL</span>
+                        <span class="tech-tag">gRPC</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <h3><i class="fas fa-robot text-accent" style="margin-right: 10px;"></i>Automation</h3>
+                    <p class="text-muted text-sm mt-16">CI/CD pipelines, infrastructure as code, cron jobs, and custom scripting to eliminate manual toil.</p>
+                    <div class="tech-grid mt-16">
+                        <span class="tech-tag">GitHub Actions</span>
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Bash</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <h3><i class="fas fa-cloud text-accent" style="margin-right: 10px;"></i>DevOps</h3>
+                    <p class="text-muted text-sm mt-16">Containerization, orchestration, monitoring, and incident response. We make deployments boring.</p>
+                    <div class="tech-grid mt-16">
+                        <span class="tech-tag">Docker</span>
+                        <span class="tech-tag">Kubernetes</span>
+                        <span class="tech-tag">Terraform</span>
+                        <span class="tech-tag">Linux</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <h3><i class="fas fa-mobile-alt text-accent" style="margin-right: 10px;"></i>Mobile Applications</h3>
+                    <p class="text-muted text-sm mt-16">Cross-platform and native mobile apps. Offline support, push notifications, and app store deployment.</p>
+                    <div class="tech-grid mt-16">
+                        <span class="tech-tag">React Native</span>
+                        <span class="tech-tag">Flutter</span>
+                        <span class="tech-tag">Swift</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <h3><i class="fas fa-puzzle-piece text-accent" style="margin-right: 10px;"></i>Custom Software</h3>
+                    <p class="text-muted text-sm mt-16">Internal tools, dashboards, data pipelines, and integrations that don't fit off-the-shelf products.</p>
+                    <div class="tech-grid mt-16">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">C#</span>
+                        <span class="tech-tag">C++</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <h3><i class="fas fa-code-branch text-accent" style="margin-right: 10px;"></i>Code Audits</h3>
+                    <p class="text-muted text-sm mt-16">Deep-dive reviews of architecture, security, and performance. Actionable reports with prioritised fixes.</p>
+                    <div class="tech-grid mt-16">
+                        <span class="tech-tag">Security</span>
+                        <span class="tech-tag">Performance</span>
+                        <span class="tech-tag">Architecture</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==================== PROJECTS ==================== -->
+    <div id="page-projects" class="page">
+        <div class="container">
+            <h1>Projects</h1>
+            <p class="subhead">A selection of recent work. Names and details are fictional for demo purposes.</p>
+
+            <div class="grid grid-2 mt-32">
+                <div class="project-card">
+                    <div class="flex-between">
+                        <h3>Atlas Analytics Platform</h3>
+                        <span class="tag">Active</span>
+                    </div>
+                    <p class="text-muted text-sm mt-8">Real-time data pipeline and dashboard for logistics company. Handles 2M+ events/day.</p>
+                    <div class="project-meta">
+                        <span>Python · React · PostgreSQL</span>
+                        <span>6 months</span>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="flex-between">
+                        <h3>Nimbus API Gateway</h3>
+                        <span class="tag">Active</span>
+                    </div>
+                    <p class="text-muted text-sm mt-8">High-throughput API gateway with rate limiting, auth, and observability.</p>
+                    <div class="project-meta">
+                        <span>Go · Redis · Docker</span>
+                        <span>4 months</span>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="flex-between">
+                        <h3>Forge CLI</h3>
+                        <span class="tag">Completed</span>
+                    </div>
+                    <p class="text-muted text-sm mt-8">Internal developer CLI for scaffolding services, managing environments, and running migrations.</p>
+                    <div class="project-meta">
+                        <span>TypeScript · Node.js</span>
+                        <span>2 months</span>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="flex-between">
+                        <h3>Sentinel Monitoring</h3>
+                        <span class="tag">Active</span>
+                    </div>
+                    <p class="text-muted text-sm mt-8">Custom observability stack with alerting, dashboards, and log aggregation.</p>
+                    <div class="project-meta">
+                        <span>Java · Kubernetes · Prometheus</span>
+                        <span>8 months</span>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="flex-between">
+                        <h3>Relay Mobile App</h3>
+                        <span class="tag">Active</span>
+                    </div>
+                    <p class="text-muted text-sm mt-8">Cross-platform field operations app with offline sync and barcode scanning.</p>
+                    <div class="project-meta">
+                        <span>React Native · C#</span>
+                        <span>5 months</span>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="flex-between">
+                        <h3>Ledger Core</h3>
+                        <span class="tag">Completed</span>
+                    </div>
+                    <p class="text-muted text-sm mt-8">Double-entry accounting engine with audit trail and multi-currency support.</p>
+                    <div class="project-meta">
+                        <span>Python · PostgreSQL</span>
+                        <span>7 months</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==================== DEVELOPERS ==================== -->
+    <div id="page-developers" class="page">
+        <div class="container">
+            <h1>Developers</h1>
+            <p class="subhead">A senior team of engineers. No juniors billed as seniors. No outsourcing.</p>
+
+            <div class="grid grid-2 mt-32">
+                <div class="dev-card">
+                    <div class="dev-item" style="border: none; padding: 0;">
+                        <div class="dev-avatar">MK</div>
+                        <div>
+                            <h3 style="margin: 0;">Mira Kovács</h3>
+                            <div class="text-muted text-sm">Principal Engineer · Backend & DevOps</div>
+                        </div>
+                    </div>
+                    <p class="text-muted text-sm mt-16">12 years building distributed systems. Go, Python, Kubernetes. Ex-cloud infrastructure lead.</p>
+                    <div class="tech-grid mt-16">
+                        <span class="tech-tag">Go</span>
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Docker</span>
+                        <span class="tech-tag">Linux</span>
+                    </div>
+                </div>
+                <div class="dev-card">
+                    <div class="dev-item" style="border: none; padding: 0;">
+                        <div class="dev-avatar">JT</div>
+                        <div>
+                            <h3 style="margin: 0;">James Tran</h3>
+                            <div class="text-muted text-sm">Staff Engineer · Frontend & Mobile</div>
+                        </div>
+                    </div>
+                    <p class="text-muted text-sm mt-16">9 years of React and React Native. Obsessed with performance and accessibility.</p>
+                    <div class="tech-grid mt-16">
+                        <span class="tech-tag">TypeScript</span>
+                        <span class="tech-tag">React</span>
+                        <span class="tech-tag">React Native</span>
+                    </div>
+                </div>
+                <div class="dev-card">
+                    <div class="dev-item" style="border: none; padding: 0;">
+                        <div class="dev-avatar">AS</div>
+                        <div>
+                            <h3 style="margin: 0;">Anika Sharma</h3>
+                            <div class="text-muted text-sm">Senior Engineer · APIs & Automation</div>
+                        </div>
+                    </div>
+                    <p class="text-muted text-sm mt-16">7 years designing REST and GraphQL APIs. Automation nerd. Python and Node.js.</p>
+                    <div class="tech-grid mt-16">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Node.js</span>
+                        <span class="tech-tag">GraphQL</span>
+                    </div>
+                </div>
+                <div class="dev-card">
+                    <div class="dev-item" style="border: none; padding: 0;">
+                        <div class="dev-avatar">LC</div>
+                        <div>
+                            <h3 style="margin: 0;">Lucas Chen</h3>
+                            <div class="text-muted text-sm">Senior Engineer · Systems & C++</div>
+                        </div>
+                    </div>
+                    <p class="text-muted text-sm mt-16">10 years in low-latency systems, game engines, and embedded software. C++ and C#.</p>
+                    <div class="tech-grid mt-16">
+                        <span class="tech-tag">C++</span>
+                        <span class="tech-tag">C#</span>
+                        <span class="tech-tag">Linux</span>
+                    </div>
+                </div>
+                <div class="dev-card">
+                    <div class="dev-item" style="border: none; padding: 0;">
+                        <div class="dev-avatar">RB</div>
+                        <div>
+                            <h3 style="margin: 0;">Rafael Barros</h3>
+                            <div class="text-muted text-sm">Senior Engineer · Java & DevOps</div>
+                        </div>
+                    </div>
+                    <p class="text-muted text-sm mt-16">8 years building enterprise Java systems and CI/CD pipelines. Terraform and Kubernetes.</p>
+                    <div class="tech-grid mt-16">
+                        <span class="tech-tag">Java</span>
+                        <span class="tech-tag">Docker</span>
+                        <span class="tech-tag">Git</span>
+                    </div>
+                </div>
+                <div class="dev-card">
+                    <div class="dev-item" style="border: none; padding: 0;">
+                        <div class="dev-avatar">EW</div>
+                        <div>
+                            <h3 style="margin: 0;">Elena Weber</h3>
+                            <div class="text-muted text-sm">Engineer · PHP & Custom Software</div>
+                        </div>
+                    </div>
+                    <p class="text-muted text-sm mt-16">6 years in PHP, Laravel, and custom business software. Strong database design skills.</p>
+                    <div class="tech-grid mt-16">
+                        <span class="tech-tag">PHP</span>
+                        <span class="tech-tag">JavaScript</span>
+                        <span class="tech-tag">Linux</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==================== TECHNOLOGIES ==================== -->
+    <div id="page-technologies" class="page">
+        <div class="container">
+            <h1>Technologies</h1>
+            <p class="subhead">We choose tools based on the problem, not hype. Here's what we work with.</p>
+
+            <h2 class="mt-32">Languages</h2>
+            <div class="tech-grid mt-16">
+                <span class="tech-tag"><i class="fab fa-js"></i> JavaScript</span>
+                <span class="tech-tag"><i class="fab fa-js"></i> TypeScript</span>
+                <span class="tech-tag"><i class="fab fa-python"></i> Python</span>
+                <span class="tech-tag"><i class="fas fa-code"></i> C++</span>
+                <span class="tech-tag"><i class="fas fa-hashtag"></i> C#</span>
+                <span class="tech-tag"><i class="fab fa-java"></i> Java</span>
+                <span class="tech-tag"><i class="fas fa-code"></i> Go</span>
+                <span class="tech-tag"><i class="fab fa-php"></i> PHP</span>
+            </div>
+
+            <h2 class="mt-32">Infrastructure & Tools</h2>
+            <div class="tech-grid mt-16">
+                <span class="tech-tag"><i class="fab fa-docker"></i> Docker</span>
+                <span class="tech-tag"><i class="fab fa-linux"></i> Linux</span>
+                <span class="tech-tag"><i class="fab fa-git-alt"></i> Git</span>
+                <span class="tech-tag"><i class="fas fa-cloud"></i> Kubernetes</span>
+                <span class="tech-tag"><i class="fas fa-code-branch"></i> Terraform</span>
+                <span class="tech-tag"><i class="fas fa-database"></i> PostgreSQL</span>
+                <span class="tech-tag"><i class="fas fa-database"></i> Redis</span>
+                <span class="tech-tag"><i class="fas fa-database"></i> MongoDB</span>
+            </div>
+
+            <h2 class="mt-32">Frameworks & Libraries</h2>
+            <div class="tech-grid mt-16">
+                <span class="tech-tag">React</span>
+                <span class="tech-tag">Vue</span>
+                <span class="tech-tag">Svelte</span>
+                <span class="tech-tag">Node.js</span>
+                <span class="tech-tag">Django</span>
+                <span class="tech-tag">FastAPI</span>
+                <span class="tech-tag">Spring Boot</span>
+                <span class="tech-tag">.NET</span>
+                <span class="tech-tag">Laravel</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==================== PRICING ==================== -->
+    <div id="page-pricing" class="page">
+        <div class="container">
+            <h1>Pricing</h1>
+            <p class="subhead">Transparent monthly retainers. No surprise invoices. Cancel anytime.</p>
+
+            <div class="grid grid-3 mt-32">
+                <div class="price-card">
+                    <h3>Starter</h3>
+                    <div class="price">$4,900<span>/month</span></div>
+                    <p class="text-muted text-sm">For small teams needing consistent development capacity.</p>
+                    <ul class="feature-list">
+                        <li><i class="fas fa-check"></i> 1 senior developer</li>
+                        <li><i class="fas fa-check"></i> 40 hours/week</li>
+                        <li><i class="fas fa-check"></i> Weekly progress reports</li>
+                        <li><i class="fas fa-check"></i> Slack access</li>
+                    </ul>
+                    <button class="btn btn-outline" style="width: 100%;" onclick="navigateTo('contact')">Get started</button>
+                </div>
+                <div class="price-card" style="border-color: var(--accent);">
+                    <div class="flex-between">
+                        <h3>Professional</h3>
+                        <span class="tag" style="border-color: var(--accent); color: var(--accent);">Popular</span>
+                    </div>
+                    <div class="price">$9,800<span>/month</span></div>
+                    <p class="text-muted text-sm">For growing products needing a full-stack team.</p>
+                    <ul class="feature-list">
+                        <li><i class="fas fa-check"></i> 2 senior developers</li>
+                        <li><i class="fas fa-check"></i> 80 hours/week</li>
+                        <li><i class="fas fa-check"></i> Dedicated project manager</li>
+                        <li><i class="fas fa-check"></i> Daily standups</li>
+                        <li><i class="fas fa-check"></i> CI/CD setup included</li>
+                    </ul>
+                    <button class="btn btn-accent" style="width: 100%;" onclick="navigateTo('contact')">Get started</button>
+                </div>
+                <div class="price-card">
+                    <h3>Enterprise</h3>
+                    <div class="price">Custom</div>
+                    <p class="text-muted text-sm">For complex systems, compliance, and scale.</p>
+                    <ul class="feature-list">
+                        <li><i class="fas fa-check"></i> Dedicated team (3+)</li>
+                        <li><i class="fas fa-check"></i> Architecture reviews</li>
+                        <li><i class="fas fa-check"></i> 24/7 support option</li>
+                        <li><i class="fas fa-check"></i> Security audits</li>
+                        <li><i class="fas fa-check"></i> Custom SLAs</li>
+                    </ul>
+                    <button class="btn btn-outline" style="width: 100%;" onclick="navigateTo('contact')">Contact us</button>
+                </div>
+            </div>
+
+            <div class="divider"></div>
+
+            <h2>All plans include</h2>
+            <div class="grid grid-3 mt-24">
+                <div class="card-flat">
+                    <i class="fas fa-code-branch text-accent"></i>
+                    <h3 class="mt-16">Code ownership</h3>
+                    <p class="text-muted text-sm">You own all code and IP from day one.</p>
+                </div>
+                <div class="card-flat">
+                    <i class="fas fa-shield-alt text-accent"></i>
+                    <h3 class="mt-16">Security first</h3>
+                    <p class="text-muted text-sm">Dependency scanning, secrets management, and secure defaults.</p>
+                </div>
+                <div class="card-flat">
+                    <i class="fas fa-chart-line text-accent"></i>
+                    <h3 class="mt-16">Observability</h3>
+                    <p class="text-muted text-sm">Logging, metrics, and alerting wired into every project.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==================== CONTACT ==================== -->
+    <div id="page-contact" class="page">
+        <div class="container">
+            <h1>Contact</h1>
+            <p class="subhead">Tell us about your project. We'll get back within one business day.</p>
+
+            <div class="grid grid-2 mt-32">
+                <div class="card">
+                    <form onsubmit="event.preventDefault(); alert('Demo mode: message sent (simulated).');">
+                        <div class="form-group">
+                            <label>Name</label>
+                            <input type="text" placeholder="Your name" value="Demo User">
+                        </div>
+                        <div class="form-group">
+                            <label>Email</label>
+                            <input type="email" placeholder="you@company.com" value="demo@byteforge.dev">
+                        </div>
+                        <div class="form-group">
+                            <label>Project type</label>
+                            <select>
+                                <option>Web Application</option>
+                                <option>Backend / API</option>
+                                <option>Mobile App</option>
+                                <option>DevOps / Automation</option>
+                                <option>Custom Software</option>
+                                <option>Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>Message</label>
+                            <textarea placeholder="Tell us about your project...">We need help building a real-time dashboard and API for our logistics platform.</textarea>
+                        </div>
+                        <button class="btn" type="submit">Send message <i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+                <div>
+                    <div class="card-flat mb-16">
+                        <h3>Email</h3>
+                        <p class="text-muted text-sm">hello@byteforge.dev</p>
+                    </div>
+                    <div class="card-flat mb-16">
+                        <h3>Office</h3>
+                        <p class="text-muted text-sm">123 Developer Lane<br>Berlin, Germany</p>
+                    </div>
+                    <div class="card-flat">
+                        <h3>Response time</h3>
+                        <p class="text-muted text-sm">Within 1 business day. For urgent matters, mention "URGENT" in the subject.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==================== CLIENT DASHBOARD ==================== -->
+    <div id="page-dashboard" class="page">
+        <div class="container">
+            <div class="flex-between">
+                <div>
+                    <h1>Client Dashboard</h1>
+                    <p class="subhead" style="margin-bottom: 0;">Demo mode — all data is simulated.</p>
+                </div>
+                <div class="demo-badge">DEMO DATA</div>
+            </div>
+
+            <!-- Stats row -->
+            <div class="grid grid-4 mt-32">
+                <div class="card-flat">
+                    <div class="text-muted text-xs">ACTIVE PROJECTS</div>
+                    <div style="font-size: 24px; font-weight: 700; color: var(--white);">3</div>
+                </div>
+                <div class="card-flat">
+                    <div class="text-muted text-xs">OPEN TASKS</div>
+                    <div style="font-size: 24px; font-weight: 700; color: var(--white);">14</div>
+                </div>
+                <div class="card-flat">
+                    <div class="text-muted text-xs">COMMITS THIS WEEK</div>
+                    <div style="font-size: 24px; font-weight: 700; color: var(--white);">47</div>
+                </div>
+                <div class="card-flat">
+                    <div class="text-muted text-xs">DEPLOYMENTS</div>
+                    <div style="font-size: 24px; font-weight: 700; color: var(--white);">8</div>
+                </div>
+            </div>
+
+            <!-- Dashboard grid -->
+            <div class="dashboard-grid mt-24">
+                <!-- Active projects -->
+                <div class="card dashboard-panel projects-panel">
+                    <div class="panel-heading">
+                        <h3><i class="fas fa-folder-open text-accent"></i>Active Projects</h3>
+                        <span class="panel-count">3 active</span>
+                    </div>
+                    <div class="panel-body">
+                        <div class="project-entry list-row state-info">
+                            <div class="stat-row">
+                                <div>
+                                    <div style="font-weight: 500;">Atlas Analytics Platform</div>
+                                    <div class="text-muted text-xs">Web · API · Data Pipeline</div>
+                                </div>
+                                <div style="text-align: right;">
+                                    <div class="text-xs text-muted">Progress</div>
+                                    <div style="font-weight: 600;">72%</div>
+                                </div>
+                            </div>
+                            <div class="progress-bar"><div class="progress-fill" style="width: 72%;"></div></div>
+                        </div>
+
+                        <div class="project-entry list-row state-warning">
+                            <div class="stat-row">
+                                <div>
+                                    <div style="font-weight: 500;">Nimbus API Gateway</div>
+                                    <div class="text-muted text-xs">Backend · DevOps</div>
+                                </div>
+                                <div style="text-align: right;">
+                                    <div class="text-xs text-muted">Progress</div>
+                                    <div style="font-weight: 600;">45%</div>
+                                </div>
+                            </div>
+                            <div class="progress-bar"><div class="progress-fill" style="width: 45%;"></div></div>
+                        </div>
+
+                        <div class="project-entry list-row state-success">
+                            <div class="stat-row">
+                                <div>
+                                    <div style="font-weight: 500;">Relay Mobile App</div>
+                                    <div class="text-muted text-xs">Mobile · Offline Sync</div>
+                                </div>
+                                <div style="text-align: right;">
+                                    <div class="text-xs text-muted">Progress</div>
+                                    <div style="font-weight: 600;">88%</div>
+                                </div>
+                            </div>
+                            <div class="progress-bar"><div class="progress-fill" style="width: 88%;"></div></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recent commits -->
+                <div class="card dashboard-panel">
+                    <div class="panel-heading">
+                        <h3><i class="fas fa-code-branch text-accent"></i>Recent Commits</h3>
+                        <span class="panel-count">5 updates</span>
+                    </div>
+                    <div class="panel-body">
+                        <div class="commit-item list-row state-neutral">
+                            <div>
+                                <span class="commit-hash">a3f8c21</span>
+                                <span style="margin-left: 8px;">Fix rate limiting edge case</span>
+                            </div>
+                            <span class="text-muted text-xs">2h ago</span>
+                        </div>
+                        <div class="commit-item list-row state-neutral">
+                            <div>
+                                <span class="commit-hash">b7e2d94</span>
+                                <span style="margin-left: 8px;">Add Redis cache layer</span>
+                            </div>
+                            <span class="text-muted text-xs">5h ago</span>
+                        </div>
+                        <div class="commit-item list-row state-neutral">
+                            <div>
+                                <span class="commit-hash">c1a9f03</span>
+                                <span style="margin-left: 8px;">Update GraphQL schema</span>
+                            </div>
+                            <span class="text-muted text-xs">1d ago</span>
+                        </div>
+                        <div class="commit-item list-row state-neutral">
+                            <div>
+                                <span class="commit-hash">d4b7e88</span>
+                                <span style="margin-left: 8px;">Refactor auth middleware</span>
+                            </div>
+                            <span class="text-muted text-xs">1d ago</span>
+                        </div>
+                        <div class="commit-item list-row state-neutral">
+                            <div>
+                                <span class="commit-hash">e9c3f12</span>
+                                <span style="margin-left: 8px;">Add integration tests</span>
+                            </div>
+                            <span class="text-muted text-xs">2d ago</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Deployment status -->
+                <div class="card dashboard-panel">
+                    <div class="panel-heading">
+                        <h3><i class="fas fa-cloud-upload-alt text-accent"></i>Deployment Status</h3>
+                        <span class="panel-count">4 services</span>
+                    </div>
+                    <div class="panel-body">
+                        <div class="stat-row list-row state-success">
+                            <div>
+                                <div style="font-weight: 500;">Atlas API</div>
+                                <div class="text-muted text-xs">production · a3f8c21</div>
+                            </div>
+                            <span class="badge badge-success">Deployed</span>
+                        </div>
+                        <div class="stat-row list-row state-warning">
+                            <div>
+                                <div style="font-weight: 500;">Nimbus Gateway</div>
+                                <div class="text-muted text-xs">staging · b7e2d94</div>
+                            </div>
+                            <span class="badge badge-warning">Building</span>
+                        </div>
+                        <div class="stat-row list-row state-success">
+                            <div>
+                                <div style="font-weight: 500;">Relay Mobile</div>
+                                <div class="text-muted text-xs">TestFlight · c1a9f03</div>
+                            </div>
+                            <span class="badge badge-success">Deployed</span>
+                        </div>
+                        <div class="stat-row list-row state-info">
+                            <div>
+                                <div style="font-weight: 500;">Atlas Worker</div>
+                                <div class="text-muted text-xs">production · d4b7e88</div>
+                            </div>
+                            <span class="badge badge-info">Rolling</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Developers assigned -->
+                <div class="card dashboard-panel">
+                    <div class="panel-heading">
+                        <h3><i class="fas fa-users text-accent"></i>Developers Assigned</h3>
+                        <span class="panel-count">4 assigned</span>
+                    </div>
+                    <div class="panel-body">
+                        <div class="dev-item list-row state-neutral">
+                            <div class="dev-avatar">MK</div>
+                            <div>
+                                <div style="font-weight: 500;">Mira Kovács</div>
+                                <div class="text-muted text-xs">Atlas Analytics · Nimbus</div>
+                            </div>
+                        </div>
+                        <div class="dev-item list-row state-neutral">
+                            <div class="dev-avatar">JT</div>
+                            <div>
+                                <div style="font-weight: 500;">James Tran</div>
+                                <div class="text-muted text-xs">Relay Mobile · Atlas</div>
+                            </div>
+                        </div>
+                        <div class="dev-item list-row state-neutral">
+                            <div class="dev-avatar">AS</div>
+                            <div>
+                                <div style="font-weight: 500;">Anika Sharma</div>
+                                <div class="text-muted text-xs">Nimbus · Automation</div>
+                            </div>
+                        </div>
+                        <div class="dev-item list-row state-neutral">
+                            <div class="dev-avatar">LC</div>
+                            <div>
+                                <div style="font-weight: 500;">Lucas Chen</div>
+                                <div class="text-muted text-xs">Atlas Worker · Systems</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tasks -->
+                <div class="card dashboard-panel">
+                    <div class="panel-heading">
+                        <h3><i class="fas fa-tasks text-accent"></i>Tasks</h3>
+                        <span class="panel-count">5 items</span>
+                    </div>
+                    <div class="panel-body">
+                        <div class="task-item list-row state-warning">
+                            <span>Implement rate limiting per API key</span>
+                            <span class="badge badge-warning">In progress</span>
+                        </div>
+                        <div class="task-item list-row state-info">
+                            <span>Write integration tests for auth flow</span>
+                            <span class="badge badge-info">Review</span>
+                        </div>
+                        <div class="task-item list-row state-warning">
+                            <span>Optimize database queries for dashboard</span>
+                            <span class="badge badge-warning">In progress</span>
+                        </div>
+                        <div class="task-item list-row state-success">
+                            <span>Set up Prometheus alerts</span>
+                            <span class="badge badge-success">Done</span>
+                        </div>
+                        <div class="task-item list-row state-info">
+                            <span>Update API documentation</span>
+                            <span class="badge badge-info">Todo</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Milestones -->
+                <div class="card dashboard-panel">
+                    <div class="panel-heading">
+                        <h3><i class="fas fa-flag text-accent"></i>Milestones</h3>
+                        <span class="panel-count">3 upcoming</span>
+                    </div>
+                    <div class="panel-body">
+                        <div class="stat-row list-row state-success">
+                            <div>
+                                <div style="font-weight: 500;">Atlas v1.0 launch</div>
+                                <div class="text-muted text-xs">Due: 2025-04-15</div>
+                            </div>
+                            <span class="badge badge-success">On track</span>
+                        </div>
+                        <div class="stat-row list-row state-warning">
+                            <div>
+                                <div style="font-weight: 500;">Nimbus beta release</div>
+                                <div class="text-muted text-xs">Due: 2025-04-30</div>
+                            </div>
+                            <span class="badge badge-warning">At risk</span>
+                        </div>
+                        <div class="stat-row list-row state-success">
+                            <div>
+                                <div style="font-weight: 500;">Relay app store submission</div>
+                                <div class="text-muted text-xs">Due: 2025-05-10</div>
+                            </div>
+                            <span class="badge badge-success">On track</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Invoices -->
+            <div class="card dashboard-panel invoices-panel mt-24">
+                <div class="panel-heading">
+                    <h3><i class="fas fa-file-invoice-dollar text-accent"></i>Invoices</h3>
+                    <span class="panel-count">4 records</span>
+                </div>
+                <div class="panel-body">
+                    <div class="invoice-item list-row state-success">
+                        <div>
+                            <div style="font-weight: 500;">INV-2025-0042</div>
+                            <div class="text-muted text-xs">Atlas Analytics — March 2025</div>
+                        </div>
+                        <div style="text-align: right;">
+                            <div style="font-weight: 600;">$9,800.00</div>
+                            <span class="badge badge-success">Paid</span>
+                        </div>
+                    </div>
+                    <div class="invoice-item list-row state-warning">
+                        <div>
+                            <div style="font-weight: 500;">INV-2025-0038</div>
+                            <div class="text-muted text-xs">Nimbus Gateway — March 2025</div>
+                        </div>
+                        <div style="text-align: right;">
+                            <div style="font-weight: 600;">$4,900.00</div>
+                            <span class="badge badge-warning">Pending</span>
+                        </div>
+                    </div>
+                    <div class="invoice-item list-row state-success">
+                        <div>
+                            <div style="font-weight: 500;">INV-2025-0031</div>
+                            <div class="text-muted text-xs">Relay Mobile — February 2025</div>
+                        </div>
+                        <div style="text-align: right;">
+                            <div style="font-weight: 600;">$9,800.00</div>
+                            <span class="badge badge-success">Paid</span>
+                        </div>
+                    </div>
+                    <div class="invoice-item list-row state-success">
+                        <div>
+                            <div style="font-weight: 500;">INV-2025-0025</div>
+                            <div class="text-muted text-xs">Atlas Analytics — February 2025</div>
+                        </div>
+                        <div style="text-align: right;">
+                            <div style="font-weight: 600;">$9,800.00</div>
+                            <span class="badge badge-success">Paid</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container flex-between" style="width: 100%;">
+            <div>© 2025 BYTEFORGE. Fictional agency for demo purposes.</div>
+            <div>All data is simulated. No authentication required.</div>
+        </div>
+    </footer>
+
+    
+<script src="js/original.js"></script>
+<script src="js/demo-data.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
